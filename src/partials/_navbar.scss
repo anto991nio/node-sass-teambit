@@ -1,0 +1,41 @@
+nav{
+    justify-content: space-between;
+    padding: $spacing/2;
+    border-bottom: solid 1px $textColor;
+    font-size: $spacing/2;
+    font-family: $fontFamily;
+    line-height: $spacing;
+    img{
+        height: $spacing;
+        vertical-align: middle;
+        
+    }
+    ul{
+        list-style: none;
+        
+        li{
+            padding: 0 0 0 ($spacing);
+            a{
+                text-decoration: none;
+                color: $textColor;
+                transition: all .3s;
+                &:hover{
+                    color: lightgray;
+                }
+            }
+            .btn-nav{
+                border: 1px solid $btnColor;
+                color: $btnColor;
+                border-radius: 5px;
+                padding: $spacing/3;
+                transition: all .3s;
+                
+                &:hover{
+                    background-color: $btnColor;
+                    color: white;
+                }
+                
+            }
+        }
+    }
+}
