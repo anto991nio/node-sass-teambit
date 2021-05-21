@@ -89,3 +89,34 @@ nav ul li .btn-nav:hover {
   color: #7f14d4;
   font-size: 11.1111111111px;
 }
+
+.darksection {
+  background-color: #0414b3;
+  padding: 20px;
+}
+.darksection .col-4 {
+  padding: 20px;
+  width: calc(100%/3);
+  text-align: center;
+}
+.darksection .col-4 img {
+  height: 100px;
+}
+.darksection h2 {
+  text-align: center;
+  font-size: 16.6666666667px;
+  color: #7f14d4;
+  padding: 20px;
+}
+
+.one-d {
+  border-bottom: solid 1px #7f14d4;
+}
+
+.darksection-imgcontainer {
+  text-align: center;
+  padding: 0 0 40px 0;
+}
+.darksection-imgcontainer img {
+  max-width: 400px;
+}

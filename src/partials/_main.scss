@@ -40,3 +40,36 @@
     }
 }
 
+.darksection{
+    background-color: $colorSection;
+    padding: $spacing;
+    .col-4{
+        padding: $spacing;
+        width: calc(100%/3);
+        text-align: center;
+        img{
+            
+            height: 100px;
+        }
+    }
+
+    h2{
+        text-align: center;
+        font-size: $spacing/1.2;
+        color: $textColor;
+        padding: $spacing;
+    }
+}
+.one-d{
+    border-bottom: solid 1px $textColor;
+}
+.darksection-imgcontainer{
+    text-align: center;
+    padding:  0 0 ($spacing*2) 0;
+    
+    img{
+        max-width: 400px;
+    }
+    
+}
+
