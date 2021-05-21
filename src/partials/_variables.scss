@@ -1,5 +1,9 @@
-$textColor: rgb(91 , 77, 121);
+$textColor: #7f14d4;
 $btnColor: rgb(46  , 71, 144);
-$colorSection: rgb(255 , 231, 210);
+$colorSection: #0414b3;
 $spacing: 20px;
-$fontFamily: "Verdana"
+$fontFamily: "Verdana";
+
+@mixin link_Decoration {
+    text-decoration: none;
+}

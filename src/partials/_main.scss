@@ -1,0 +1,42 @@
+.row{
+    padding: $spacing;
+    .col-6{
+        width: 50%;
+        img{
+            max-width: 100%;
+        }
+        a{
+            @include link_Decoration;
+            background-color: $btnColor;
+            color: white;
+            padding: $spacing/2;
+            transition: all .3s;
+            border-radius: 5px;
+            font-size: $spacing/1.8;
+            &:hover{
+                background-color: lighten($btnColor, 15%)
+            }
+
+            img{
+                height: $spacing;
+                vertical-align: top;
+
+            }
+        }
+    }
+    
+    h1{
+        color: $textColor;
+        font-size: $spacing*1.2;
+    }
+    p{
+        color: $textColor;
+        font-size: $spacing/1.8;
+        padding: $spacing 0 ;
+    }
+    span{
+        color: $textColor;
+        font-size: $spacing/1.8;
+    }
+}
+

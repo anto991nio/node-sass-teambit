@@ -3,7 +3,6 @@ nav{
     padding: $spacing/2;
     border-bottom: solid 1px $textColor;
     font-size: $spacing/2;
-    font-family: $fontFamily;
     line-height: $spacing;
     img{
         height: $spacing;
@@ -16,7 +15,7 @@ nav{
         li{
             padding: 0 0 0 ($spacing);
             a{
-                text-decoration: none;
+                @include link_Decoration;   
                 color: $textColor;
                 transition: all .3s;
                 &:hover{
