@@ -13,5 +13,9 @@
 
 .d-flex{
     display: flex;
+    flex-wrap: wrap;
 }
 
+.row{
+    padding: ($spacing*2) 0;
+}

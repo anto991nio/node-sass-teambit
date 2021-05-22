@@ -1,11 +1,25 @@
-.row{
-    padding: $spacing;
+
     .col-6{
         width: 50%;
         img{
             max-width: 100%;
         }
+        h2{
+            color: $textColor;
+            font-size: $spacing;
+        }
+        p{
+
+            font-size: $spacing;
+            padding: $spacing 0 ;
+        }
         a{
+            @include link_Decoration;
+            color: $colorSection;
+            display: inline-block;
+            margin: $spacing*1.5 0;
+        }
+        .btnmain{
             @include link_Decoration;
             background-color: $btnColor;
             color: white;
@@ -38,8 +52,6 @@
         color: $textColor;
         font-size: $spacing/1.8;
     }
-}
-
 .darksection{
     background-color: $colorSection;
     padding: $spacing;
@@ -71,5 +83,9 @@
         max-width: 400px;
     }
     
+}
+
+.reverse{
+    flex-direction: row-reverse;
 }
 
