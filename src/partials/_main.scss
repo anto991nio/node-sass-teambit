@@ -33,7 +33,7 @@
 
             img{
                 height: $spacing;
-                vertical-align: top;
+                vertical-align: middle;
 
             }
         }
@@ -46,7 +46,7 @@
     p{
         color: $textColor;
         font-size: $spacing/1.8;
-        padding: $spacing 0 ;
+        
     }
     span{
         color: $textColor;
@@ -87,5 +87,63 @@
 
 .reverse{
     flex-direction: row-reverse;
+}
+
+.founder{
+    padding: $spacing*2 0;
+    background-color: $colorSection;
+    h2{
+        font-size: $spacing*1.5;
+        color: $textColor;
+        padding: $spacing;
+        text-align: center;
+    }
+    .cofounder{
+        border:2px solid $textColor;
+        background-color: white;
+        padding: 5px $spacing;
+        border-radius: 10px;
+        
+        p{
+            font-size: $spacing/1.3;
+            margin-bottom: 10px;
+        }
+        img{
+            height: 50px;
+            margin-right: 20px;
+        }
+        .d-flex{
+            p{margin: 0;}
+        }
+        
+    }
+    a{
+        @include link_Decoration;
+        color: $colorSection;
+        display: inline-block;
+        margin: $spacing*1.5 0;
+        
+    }
+    .btnmain{
+        @include link_Decoration;
+        background-color: $btnColor;
+        color: white;
+        padding: $spacing/2;
+        transition: all .3s;
+        border-radius: 5px;
+        font-size: $spacing/1.8;
+        &:hover{
+            background-color: lighten($btnColor, 15%)
+        }
+
+        img{
+            height: $spacing;
+            vertical-align: top;
+
+        }
+    }
+    #btnfounder{
+        text-align: center;
+    }
 }
 
