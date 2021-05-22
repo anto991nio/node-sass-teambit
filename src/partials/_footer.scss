@@ -1,0 +1,36 @@
+footer{
+    color: $textColor;
+    font-size: $spacing/1.6;
+    .col-4{
+        width: calc(100%/3);
+        
+        img{
+            height: 70px;
+            margin-right:15px;
+        }
+    }
+    .col-8{
+        width: calc((100%/3)*2 );
+        
+
+        .col-2{
+        width: calc(100%/6);
+
+        }
+    }
+
+    ul{
+        list-style: none;
+        line-height: 40px;
+    }
+
+    a{
+        @include link_Decoration;
+        color: $textColor;
+        transition: all .3s;
+            &:hover{
+             color: lightgray;
+            }
+    }
+    
+}
